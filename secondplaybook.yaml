@@ -1,0 +1,9 @@
+---
+ - hosts: grp1
+   become: true
+   tasks:
+     - name: installing httpd package
+       yum: name=httpd state=installed
+       
+     - name: starting httpd service
+       service: name=httpd state=started enabled=yes

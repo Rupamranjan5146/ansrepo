@@ -1,0 +1,9 @@
+---
+  - hosts: grp1
+    become: true
+    tasks:
+      - name: create group testgroup
+        group: name=testgroup1 state=present
+
+      - name: create user testuser
+        user: name=testuser group=testgroup1 state=present
