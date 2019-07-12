@@ -1,0 +1,13 @@
+---
+# tasks file for generalroles
+  - name: create group group1
+    group: name=group1 state=present
+
+  - name: create user1
+    user: name=user1 state=present group=group1
+
+  - name: create user2
+    user: name=user2 state=present group=group1
+
+  - name: update python
+    
