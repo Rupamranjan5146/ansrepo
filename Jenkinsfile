@@ -1,6 +1,6 @@
 node {
     stage ('checkout') {
-        git clone: 'https://github.com/Rupamranjan5146/mariadb_sample.git'
+        git clone 'https://github.com/Rupamranjan5146/mariadb_sample.git'
     }
 	post {
     always {
