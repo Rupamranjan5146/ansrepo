@@ -33,4 +33,4 @@
     
    handlers:
      - name: "Restart_httpd"
-       service: name=httpd state=restarted
+       service: name=httpd state=restar
