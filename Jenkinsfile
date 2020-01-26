@@ -14,7 +14,7 @@ node {
     failure {
       mail to: 'rupam.kumari306@gmail.com',
       subject: "Pipeline has failed: ${currentBuild.fullDisplayName}",
-      body: "Error in ${env.BRANCH_NAME} ${env.BUILD_URL}   ${env.JOB_NAME}"
+      body: "Error in ${env.BRANCH_NAME} ${env.BUILD_URL}  ${env.JOB_NAME}"
     }
 	}
 }
