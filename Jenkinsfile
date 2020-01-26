@@ -1,6 +1,7 @@
 node {
     stage ('checkout') {
-        git clone 'https://github.com/Rupamranjan5146/mariadb_sample.git'
+        git 'https://github.com/Rupamranjan5146/ansrepo.git'
+	sh "ls -al"
     }
 	post {
     always {
